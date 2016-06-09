@@ -1,0 +1,31 @@
+/* Empty. Add your own CSS if you like */
+
+.head{
+	background-color: black;
+	height:250px;
+	//width: 950px
+}
+
+.left-div {
+    	float: left;
+	margin-right: 8px;
+	margin-left: 8px;
+}
+
+.right-div {
+	height: 120px;
+	margin-left: 230px;
+}
+
+.rating{
+	margin-left: 880px
+}
+
+.content{
+	height: 10px;
+	margin-left: 540px
+}
+
+.weight{
+	font-weight: bold
+}

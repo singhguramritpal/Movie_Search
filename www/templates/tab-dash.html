@@ -1,0 +1,24 @@
+<ion-view view-title="Dashboard">
+  <ion-content class="padding">
+    <br>
+    <br>
+    <div class="list">
+
+      <div class="item item-input-inset">
+        <label class="item-input-wrapper">
+          <input type="text" data-ng-model="search.movie" placeholder="Enter the movie name">
+        </label>
+        <button class="button button-small" ng-click="doSomething()">Submit</button>
+      </div>
+
+      <ion-list>
+      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="chat in chats" type="item-text-wrap" href="#/tab/chats/{{chat.imdbID}}">
+        <img alt="N/A" ng-src="{{chat.Poster}}">
+        <h2>{{chat.Title}}</h2>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+      </ion-item>
+    </ion-list>
+
+    </div>
+  </ion-content>
+</ion-view>

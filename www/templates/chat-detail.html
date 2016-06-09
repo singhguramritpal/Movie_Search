@@ -1,0 +1,48 @@
+<ion-view view-title="{{chat.Title}}">
+  <ion-content class="padding">
+    <div class="container">
+      <br>
+      <br>
+      <div class="head">
+        <br>
+        <br>
+        <div class="left-div info">
+          <font size="10" color="white">{{chat.Title}} <span><font size="4">({{chat.Year}})</font></span></font>
+          <br>
+          <br>
+          <font color="white">{{chat.Type}} |</font>
+          <font color="white">{{chat.Language}} |</font>
+          <font color="white">{{chat.Released}} ({{chat.Country}}) |</font>
+          <font color="white"> {{chat.Runtime}}</font>       
+        </div>
+        <div class="right-div">
+          <div class="rating">
+            <font size="9" color="white"><span><font size="1">imbd Rating:</font></span>{{chat.imdbRating}}</font><font color="white">/10</font>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="content-body">
+        <div class="left-div"><a ng-href="#/tab/chats/{{chat.imdbID}}" ng-click="resizeImage()"><img ng-src="{{chat.Poster}}" alt="Resized JPEG graphic" title="Click to view" width = "200" height = "200"></a></div>
+        <div class="right-div">
+          <font>{{chat.Plot}}</font>
+          <br>
+          <br>
+          <div class="">
+          <label class ="weight" for="genre">Genre: </label>
+          <font id="genre" size="3">{{chat.Genre}}</font>
+          <br>
+          <label class ="weight" for="genre">Director: </label>
+          <font id="genre" size="3">{{chat.Director}}</font>
+          <br>
+          <label class ="weight" for="genre">Actors: </label>
+          <font id="genre" size="3">{{chat.Actors}}</font>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    
+
+  </ion-content>
+</ion-view>
