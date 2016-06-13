@@ -1,4 +1,5 @@
 
+//controller for the tab-dash.html
 
 app.controller('DashCtrl', function($scope, $http) {
 
@@ -6,7 +7,7 @@ app.controller('DashCtrl', function($scope, $http) {
    		movie:""
    	}
 
-   $scope.doSomething = function(){
+   $scope.searchMovie = function(){
 
    	var name = $scope.search.movie;
    	
@@ -18,6 +19,7 @@ app.controller('DashCtrl', function($scope, $http) {
    }
 
 });
+
 
 app.controller('ChatDetailCtrl', function($scope, $http, $stateParams) {
 
